@@ -1,8 +1,10 @@
+// import Navigation from "@/components/Layout/Navigation";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import iranSansX from "./fonts";
+import Footer from "@/src/shared/ui/Footer";
+import Divider from "@/src/shared/ui/Divider";
+import { Header } from "@/src/widgets/Header/ui";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" dir="rtl">
+      <body className={`${iranSansX.className} bg-[#1F1F1F] overflow-x-hidden`}>
+      <Header/>
+        {children}
+      <Divider className='mt-20 mb-10' />
+        <Footer/>
+      </body>
     </html>
   );
 }
