@@ -60,7 +60,7 @@ export const Home = () => {
       <Divider>بسته های ما</Divider>
       <section className="flex w-full flex-wrap justify-center gap-14 mt-14">
         {packageItems.map((pkg: PackageType) => (
-          <Package items={pkg.items} link={pkg.link} price={pkg.price} title={pkg.title} />
+          <Package key={index} items={pkg.items} link={pkg.link} price={pkg.price} title={pkg.title} />
         ))}
       </section>
 
