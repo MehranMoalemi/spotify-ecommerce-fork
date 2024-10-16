@@ -18,6 +18,25 @@
 
 body {
   color: rgb(var(--foreground-rgb));
+  background-image: url('/images/bg.png');
+  background-repeat: repeat;
+  background-size: 15rem;
+}
+
+.mobile_nav{
+  background-image: url('/images/bg.png');
+  background-repeat: repeat;
+  background-size: 15rem;
+}
+.desktop_nav{
+  background-image: url('/images/bg.png');
+  background-repeat: repeat;
+  background-size: 15rem;
+}
+.mobile_nav{
+  background-image: url('/images/bg.png');
+  background-repeat: repeat;
+  background-size: 15rem;
 }
 
 @layer utilities {
