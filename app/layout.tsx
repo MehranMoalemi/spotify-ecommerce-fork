@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="rtl">
-      <body className={`${iranSansX.className} bg-[#1F1F1F] overflow-x-hidden`}>
+      <body className={`${iranSansX.className}  overflow-x-hidden`}>
       <Header/>
         {children}
       <Divider className='mt-20 mb-10' />
