@@ -1,4 +1,5 @@
 {
+
   "extends": "next/core-web-vitals",
 
 
@@ -7,4 +8,6 @@
     "@next/next/no-page-custom-font": "off",
 "no-console": "off", // Disable no-console rule
     "react/react-in-jsx-scope": "off"   
-}}
+}
+}
+
