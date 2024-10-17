@@ -14,9 +14,9 @@ import MobileLightSpot from './icons/MobileLightSpot';
 
 export const Home = () => {
   return (
-    <main className="relative flex min-h-screen max-w-[80rem] mx-auto flex-col items-center justify-between lg:px-24   top-[6.5rem]">
+    <main className="relative flex min-h-screen max-w-[80rem] mx-auto flex-col items-center justify-between lg:px-24   md:top-[6.5rem]">
       <section className='flex mb-36 flex-col xl:flex-row'>
-        <MobileLightSpot  className='absolute w-[20rem] right-1/2 translate-x-[50%] top-[14%] xl:hidden'/>
+        <MobileLightSpot  className='absolute w-[20rem] right-1/2 translate-x-[50%] top-2 xl:hidden'/>
         <Dogs className='relative z-40  w-[20rem] mx-auto xl:w-[25rem]   -top-2 xl:top-20 order-2 xl:order-1'/> 
       <div className="relative  mr-auto flex px-4 w-full xl:w-1/2  flex-col items-end justify-center gap-10 order-1 xl:order-2">
         <div className="relative  flex h-40 xl:h-60 w-full xl:w-[25rem] flex-col items-center justify-center gap-4 rounded-[15px] bg-spotify-main text-center text-white before:absolute md:before:right-[-20px] before:right-[0] before:top-1/2 before:h-0 before:w-0 before:-translate-y-1/2 before:transform md:before:border-b-[10px] md:before:border-l-[20px] md:before:border-t-[10px] before:border-b-transparent before:border-l-spotify-main before:border-t-transparent md:before:content-['']">
@@ -31,11 +31,11 @@ export const Home = () => {
           </span>
         </div>
         <div className="flex justify-between gap-4 md:gap-9 ">
-          <Link href={'#'} className="flex w-1/2 md:max-w-[9.5rem] flex-col items-center justify-center gap-2 rounded-2xl border-[6px] border-spotify-dark p-3 text-center">
-            دیدن بخش مقاله ها
+          <Link href={'#'} className="flex w-1/2 md:max-w-[12rem] flex-col items-center justify-center gap-2 rounded-2xl border-[6px] border-spotify-dark p-3 text-center">
+            دیدن بخش <br/>مقاله ها
             <LinkIcon className='h-6 w-6 ' color='#4F796F'/>
           </Link>
-          <Link href={'#'} className="whitespace-wrap flex w-1/2 md:max-w-[9.5rem] flex-col items-center justify-center gap-2 rounded-2xl border-[6px] border-brick bg-brick p-3 text-center font-semibold text-black">
+          <Link href={'#'} className="whitespace-wrap flex w-1/2 md:max-w-[12rem] flex-col items-center justify-center gap-2 rounded-2xl border-[6px] border-brick bg-brick p-3 text-center font-semibold text-black">
             بسته های اسپاتیفای پرمیوم
             <LinkIcon className='h-6 w-6 '  color='#2D201E'/>
           </Link>
