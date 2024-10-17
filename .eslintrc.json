@@ -1,7 +1,13 @@
 {
-  "extends": "next/core-web-vitals",  
-  "rules": {
-    "no-console": "off", // Disable no-console rule
-    "react/react-in-jsx-scope": "off" // Disable react-in-jsx-scope rule
-  }
+
+  "extends": "next/core-web-vitals",
+
+
+"rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+"no-console": "off", // Disable no-console rule
+    "react/react-in-jsx-scope": "off"   
 }
+}
+
