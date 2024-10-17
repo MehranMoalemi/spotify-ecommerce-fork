@@ -1,4 +1,3 @@
-import Image from "next/image";
-import { Home } from "@/src/pages/home";
+import { Home } from "@/src/views/home";
 
-export default  Home
+export default Home
