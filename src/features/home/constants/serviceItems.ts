@@ -1,7 +1,7 @@
-import { FastDeliverySvg } from "../../../pages/home/ui/icons/FastDeliverySvg";
-import { LegalChargeSvg } from "../../../pages/home/ui/icons/LegalChargeSvg";
-import { SecurePaymentSvg } from "../../../pages/home/ui/icons/SecurePaymentSvg";
-import { SupportSvg } from "../../../pages/home/ui/icons/SupportSvg";
+import { FastDeliverySvg } from "../../../views/home/ui/icons/FastDeliverySvg";
+import { LegalChargeSvg } from "../../../views/home/ui/icons/LegalChargeSvg";
+import { SecurePaymentSvg } from "../../../views/home/ui/icons/SecurePaymentSvg";
+import { SupportSvg } from "../../../views/home/ui/icons/SupportSvg";
 
 export const serviceItems = [
   {
