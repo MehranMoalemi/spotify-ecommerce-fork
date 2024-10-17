@@ -13,8 +13,8 @@ const Package: React.FC<PackagePropsTypes> = (props) => {
                 <p className='text-spotify-main text-xl font-bold tetx'>{title}</p>
                 <ul className='w-full'>
                     {
-                        items.map((item: string) => (
-                            <li className='text-black flex items-center justify-between py-1 gap-2 px-2'>
+                        items.map((item: string,index:number) => (
+                            <li key={index} className='text-black flex items-center justify-between py-1 gap-2 px-2'>
                                 <p className='text-sm whitespace-nowrap '>{item}</p>
                                 <span className='flex-auto h-2 border-t border-dashed border-[#77A48E]'></span>
                                 <svg className='w-4 h-4' fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25"><path d="M2.6 22.6h2.8l7.6.2 4.8.3q1.8.2 3.9-.7l.4-2.1q.8-6.5.6-13.1l-.2-1.8q-.2-1.2-1.2-1.4-1.8-.6-3.7-.9L6.2 2.6q-1.7 0-3.3.8l-.2 2.8L2 17.7c0 1.6-.2 3.2.6 5m8.4 1.9-6.7.2c-2.6.1-4-.4-4.3-4.3v-4.1L.5 6V3.2Q.8.9 2.8.2L4.2 0h5l7.3.5q2.4 0 4.7 1 2.6 1 2.7 4.2l.1 2.5-.2 11q0 1.6-.4 3.1-.3 2.2-2.4 2.4l-4.5.3q-2.8 0-5.5-.4" fill="#7C7F8F" /><path d="m7 13.3 3.8 3.7L19 9" stroke="#77A48E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg>
