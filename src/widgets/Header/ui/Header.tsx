@@ -12,7 +12,7 @@ import useScrollVisibility from './hooks/useScrollVisibility'
 export const Header = () => {
   const [activeLight, setActiveLight] = useState<number | null>(1);
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const isLightsVisible = useScrollVisibility();
+  const { isLightsVisible, setIsLightsVisible } = useScrollVisibility();
 
   const path = usePathname();
   const validPaths: Array<'/' | 'contactus' | 'packages'> = ['/', 'contactus', 'packages'];
@@ -24,6 +24,7 @@ export const Header = () => {
   const defaultAddress = defaultPath === '/' ? lightValues['home'] : lightValues[defaultPath];
 
   const handleMouseEnter = (index: number) => {
+    if (path !== '/') setActiveLight(index);
     setActiveLight(index);
   };
 
@@ -53,8 +54,10 @@ export const Header = () => {
 
 
 
+
+
   return (
-    <header className={` relative md:sticky right-0 left-0 h-24 ${isLightsVisible ? null : 'z-50'}  flex justify-between w-full py-8  px-6 lg:px-24  h-[6rem]`}>
+    <header className={` relative flex items-center md:sticky top-0  right-0 left-0  desktop_nav ${isLightsVisible ? null : 'z-50'}  flex justify-between w-full py-8  px-6 lg:px-24  h-[4rem]`}>
       {/* Mobile Toggle Button */}
       <button
         className='md:hidden text-white'
@@ -83,41 +86,49 @@ export const Header = () => {
               </svg>
             </button>
           </div>
-          <ul className='flex flex-col md:flex-row gap-6 p-10 md:p-0'>
+          <ul className='flex flex-col md:flex-row  p-10 md:p-0'>
             {navigationItems.map((item, index) => (
               <Link key={index} href={item.link}>
                 <li
                   onMouseEnter={() => handleMouseEnter(index + 1)}
                   onMouseLeave={handleMouseLeave}
-                  className={`pb-2 transition-all duration-500 border-b  ${activeLight === index + 1 || path === item.link
-                    ? 'text-khaki border-khaki'
-                    : 'text-white border-transparent'
-                    } hover:text-khaki hover:border-khaki`}
+                  className={`custom-list-item ${activeLight === index + 1 || path === item.link
+                    ? 'custom-list-item-active'
+                    : 'custom-list-item-inactive'
+                    } custom-list-item-hover`}
                 >
                   {item.label}
+                  <span
+                    className={`custom-list-item-span ${activeLight === index + 1 || path === item.link
+                      ? 'custom-list-item-span-active'
+                      : 'custom-list-item-span-inactive'
+                      } custom-list-item-span-hover`}
+                  ></span>
                 </li>
+
+
               </Link>
             ))}
           </ul>
         </nav>
 
         {/* Logo */}
-        <LogoSvg  className='mr-auto'/>
+        <LogoSvg className='mr-auto' />
       </div>
       {/* Lights */}
       {isLightsVisible ? (<>
         <Light1
-          className={`absolute z-30 hidden xl:block w-[45rem] h-[28rem] top-16 right-[0%] transition-opacity transform $ {
+          className={`absolute z-30 hidden xl:block w-[45rem] h-[28rem] top-[2.9rem] right-[.7%] transition-opacity transform $ {
           ${activeLight === 1 ? 'opacity-100 translate-x-0' : 'opacity-0 '}`}
         />
 
         <Light2
-          className={`absolute z-30 hidden xl:block w-[45rem] h-[28rem] top-16 right-[4.2%] transition-opacity transform $ {
+          className={`absolute z-30 hidden xl:block w-[45rem] h-[28rem] top-[2.9rem] right-[4.8%] transition-opacity transform $ {
           ${activeLight === 2 ? 'opacity-100 translate-x-0' : 'opacity-0 '}`}
         />
 
         <Light3
-          className={`absolute z-30 hidden xl:block w-[45rem] h-[26.4rem] top-16 right-[5.1%] transition-opacity transform $ {
+          className={`absolute z-30 hidden xl:block w-[45rem] h-[26.4rem] top-[2.9rem] right-[5.5%] transition-opacity transform $ {
           ${activeLight === 3 ? 'opacity-100 translate-x-0' : 'opacity-0 '}`}
         />
       </>) : null}
