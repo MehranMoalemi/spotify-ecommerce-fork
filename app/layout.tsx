@@ -18,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="rtl">
-      <body className={`${iranSansX.className}  overflow-x-hidden`}>
+      <body className={`${iranSansX.className}  overflow-x-hidden `}>
       <Header/>
         {children}
-      <Divider className='mt-20 mb-10' />
+      <Divider className='mt-20 mb-10 max-w-[80rem] lg:px-24' />
         <Footer/>
       </body>
     </html>

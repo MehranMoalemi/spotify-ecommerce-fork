@@ -23,7 +23,7 @@ const Package: React.FC<PackagePropsTypes> = (props) => {
                         ))
                     }
                 </ul>
-            <div className='flex justify-between w-full p-2 mt-1'>
+            <div className='flex justify-between items-center w-full p-2 mt-1'>
                 <Link href={link} className=' py-2 px-3 text-sm rounded-md bg-khaki'>خرید اشتراک</Link>
                 <p className='text-black text-lg font-semibold '>
                     {price}
