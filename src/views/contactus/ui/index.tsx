@@ -25,7 +25,7 @@ export const ContactUs = () => {
                     </div>
                     <div className='flex flex-col gap-4 '>
                         <label className='text-spotify-pale '>پیام خود را وارد کنید:</label>
-                        <textarea rows={4} className='w-full bg-transparent text-cream border border-cream rounded-xl py-3 px-4 caret-cream placeholder-cream placeholder:opacity-50 outline-none' placeholder='متن پیام...' />
+                        <textarea rows={4} className='w-full bg-transparent input-border text-cream  rounded-xl py-3 px-4 caret-cream placeholder-cream placeholder:opacity-50 outline-none' placeholder='متن پیام...' />
                     </div>
                     <Button className='text-lg mt-4 py-6' variant={'primary'}>
                         ارسال
