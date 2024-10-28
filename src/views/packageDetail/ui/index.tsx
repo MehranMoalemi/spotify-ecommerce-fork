@@ -9,7 +9,7 @@ import { LogoSvg } from '@/src/shared/Icons/Logo'
 
 export const PackageDetail = () => {
   return (
-    <main className='main-layout w-full'>
+    <main className='main-layout'>
       <div className='flex w-full flex-col lg:flex-row '>
         <PackageInfo />
         <div className='basis-1/2 -mt-6 lg:mt-0 mx-auto  lg:mr-20 max-w-[24rem] p-4 lg:p-0'>
