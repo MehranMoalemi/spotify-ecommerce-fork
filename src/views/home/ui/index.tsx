@@ -14,7 +14,7 @@ import MobileLightSpot from './icons/MobileLightSpot';
 
 export const Home = () => {
   return (
-<main className="relative flex min-h-screen max-w-[80rem] mx-auto flex-col items-center justify-between lg:px-24 mt-2">
+<main className="main-layout">
       <section className='flex mb-36 flex-col xl:flex-row'>
         <MobileLightSpot className='absolute w-[20rem] right-1/2 translate-x-[50%] top-2 xl:hidden' />
         <Dogs className='relative z-40  w-[20rem] mx-auto xl:w-[25rem] -top-2 xl:left-6  xl:top-24 order-2 xl:order-1' />
