@@ -87,6 +87,9 @@ body {
   @apply hover:bg-khaki;
 }
 
+.input-border{
+  @apply border-[3px] border-cream ; 
+}
 
 /* main layout */
 /* Inside your global.css or main CSS file */

@@ -42,7 +42,7 @@ export function Combobox(props: ComboProps) {
                     variant="outline"
                     role="combobox"
                     aria-expanded={open}
-                    className="py-6 justify-between bg-transparent border-cream text-cream rounded-xl"
+                    className="py-6 justify-between bg-transparent input-border text-cream rounded-xl"
                 >
                     {value
                         ? items.find((item) => item.value === value)?.label

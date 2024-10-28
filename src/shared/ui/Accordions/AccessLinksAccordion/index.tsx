@@ -11,7 +11,7 @@ export const AccessLinksAccordion: React.FC<AccessLinksProps> = ({ title,childre
   return (
     <Accordion type={type} collapsible className="w-full md:w-[45%]   mt-10 relative z-[5]">
       <div className="flex flex-col md:flex-row md:flex-wrap gap-4 items-start justify-center">
-        <AccordionItem key={title} value={title} className="border border-cream rounded-lg w-full">
+        <AccordionItem key={title} value={title} className="border-[2px] border-cream rounded-lg w-full">
           <AccordionTrigger className="py-4 px-4 rounded-lg text-cream">
             {title}
           </AccordionTrigger>
