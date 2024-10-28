@@ -13,7 +13,7 @@ const Package: React.FC<PackagePropsTypes> = (props) => {
                 <p className='text-spotify-main text-xl font-bold tetx'>{title}</p>
                 <ul className='w-full'>
                     {
-                        items.map((item: string,index:number) => (
+                        items.map((item: string, index: number) => (
                             <li key={index} className='text-black flex items-center justify-between py-1 gap-2 px-2'>
                                 <p className='text-sm whitespace-nowrap '>{item}</p>
                                 <span className='flex-auto h-2 border-t border-dashed border-[#77A48E]'></span>
@@ -23,13 +23,13 @@ const Package: React.FC<PackagePropsTypes> = (props) => {
                         ))
                     }
                 </ul>
-            <div className='flex justify-between items-center w-full p-2 mt-1'>
-                <Link href={link} className=' py-2 px-3 text-sm rounded-md bg-khaki'>خرید اشتراک</Link>
-                <p className='text-black text-lg font-semibold '>
-                    {price}
-                    <span className='text-sm mr-1 font-light '>تومان</span>
-                </p>
-            </div>
+                <div className='flex justify-between items-center w-full p-2 mt-1'>
+                    <Link href={link} className=' py-2 px-3 text-sm rounded-md bg-khaki'>خرید اشتراک</Link>
+                    <p className='text-black text-lg font-semibold '>
+                        {price}
+                        <span className='text-sm mr-1 font-light '>تومان</span>
+                    </p>
+                </div>
             </div>
         </div>
     )
