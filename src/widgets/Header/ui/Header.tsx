@@ -50,6 +50,7 @@ export const Header = () => {
     };
   }, [isNavOpen]);
 
+ 
   return (
     <header
       className={` relative flex items-center md:sticky top-0  right-0 left-0  desktop_nav ${
@@ -86,13 +87,13 @@ export const Header = () => {
                 <li
                   onMouseEnter={() => handleMouseEnter(index + 1)}
                   onMouseLeave={handleMouseLeave}
-                  className={`custom-list-item ${activeLight === index + 1 || path === item.link ? 'custom-list-item-active' : 'custom-list-item-inactive'} custom-list-item-hover`}
+                  className={`custom-list-item group  ${ path === item.link ? 'custom-list-item-active' : 'custom-list-item-inactive'} custom-list-item-hover`}
                 >
                   {item.label}
                   <span
-                    className={`custom-list-item-span ${
-                      activeLight === index + 1 || path === item.link ? 'custom-list-item-span-active' : 'custom-list-item-span-inactive'
-                    } custom-list-item-span-hover`}
+                    className={`custom-list-item-span  ${
+                       path === item.link ? 'custom-list-item-span-active' : ''
+                    }  group-hover:bg-khaki`}
                   ></span>
                 </li>
               </Link>
@@ -111,7 +112,7 @@ export const Header = () => {
           ${activeLight === 1 ? 'opacity-100 translate-x-0' : 'opacity-0 '}`}
           />
 
-          <Light2
+          <Light2 
             className={`absolute z-30 hidden xl:block w-[45rem] h-[28rem] top-[2.9rem] right-[4.8%] transition-opacity transform $ {
           ${activeLight === 2 ? 'opacity-100 translate-x-0' : 'opacity-0 '}`}
           />
