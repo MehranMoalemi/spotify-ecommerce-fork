@@ -91,7 +91,7 @@ body {
 /* main layout */
 /* Inside your global.css or main CSS file */
 .main-layout {
-  @apply relative flex min-h-screen max-w-[80rem] mx-auto flex-col items-center justify-between lg:px-24 mt-2;
+  @apply relative w-full flex min-h-screen max-w-[80rem] mx-auto flex-col items-center justify-between lg:px-24 mt-2 ;
 }
 
 
