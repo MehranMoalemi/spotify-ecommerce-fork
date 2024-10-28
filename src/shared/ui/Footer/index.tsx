@@ -35,7 +35,7 @@ const Footer = () => {
       {/* contact ways */}
       <div className='pb-10'>
         <h3 className='text-khaki font-bold text-lg text-center mt-10'>راه های ارتباطی با ما</h3>
-        <div className='flex justify-center gap-4 py-6 flex-wrap'>
+        <div className='flex justify-center gap-4 py-6 flex-wrap [&>a>p]:text-white '>
           {/* contact item  number*/}
           <a className='w-[239px] bg-spotify-dark flex justify-between  gap-4 px-4  items-center py-2 rounded-3xl '>
             <div className='bg-cream p-2 rounded-full'>
@@ -84,7 +84,7 @@ const Footer = () => {
         <Image src={enamad} alt='' width={126} height={116}/>
       </div>
       <div className='w-full border-t border-spotify-dark absolute right-0 '>
-        <p className='text-center my-4 text-xs opacity-70'>تمام حقوق سایت متعلق به یه اسپاتیفای است</p>
+        <p className='text-center my-4 text-xs opacity-70 text-white'>تمام حقوق سایت متعلق به یه اسپاتیفای است</p>
       </div>
     </footer>
   )
